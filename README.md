@@ -15,22 +15,24 @@ gcloud auth application-default login
 # sets env var with new random GCP project id
 source ./sourceMakeRandomProjectId.sh
 
-# creates basic project, saves to local bootstrap.state
+# creates basic project, saves to local bootstrap.tfstate
 cd gcp-project-bootstrap
 ./init.sh
+# shows output: bucketname, mybilling, projid, projname, projnumber, region
 ./apply.sh
 cd ..
 
 # gcloud login for terraform, set to explicit project id
 gcloud auth application-default login --project $TF_VAR_project
 
-# creates 'example-topic' using values from local bootstrap.state, saves to remote GCS
+# creates 'example-topic', saves to remote GCS
 cd gcp-topic
 ./init.sh
+# shows output: topic1_labels, topic1_name
 ./apply.sh
 cd ..
 
-# creates 'example-topic-2' using values from local bootstrap.state and remote 'example-topic' state
+# creates 'example-topic-2' using values from local bootstrap.tfstate and remote 'example-topic' state
 cd gcp-topic2
 ./init.sh
 ./apply.sh
