@@ -1,8 +1,8 @@
-** Example for terraform remote state **
+# Example for terraform remote state
 
 blog: 
 
-*** Quick Setup ***
+## Quick Setup
 
 ```
 # sets env var with random project id
@@ -27,7 +27,7 @@ cd gcp-topic2
 cd ..
 ```
 
-*** Teardown ***
+## Teardown
 
 ```
 cd gcp-project-bootstrap
