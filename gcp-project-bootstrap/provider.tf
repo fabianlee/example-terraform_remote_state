@@ -15,14 +15,14 @@ terraform {
 }
 
 provider "google" {
-      # prereq: gcloud auth application-default login --project <projectId>
+      # prereq: gcloud auth application-default login
       project     = var.project
       region      = var.region
       zone        = "${var.region}-${var.zone_suffix}"
 }
 
 provider "google-beta" {
-      # prereq: gcloud auth application-default login --project <projectId>
+      # prereq: gcloud auth application-default login
       project     = var.project
       region      = var.region
       zone        = "${var.region}-${var.zone_suffix}"

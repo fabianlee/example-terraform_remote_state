@@ -9,6 +9,9 @@ blog:
 git clone https://github.com/fabianlee/example-terraform_remote_state.git
 cd example-terraform_remote_state
 
+# gcloud login for terraform
+gcloud auth application-default login
+
 # sets env var with random project id
 source ./sourceMakeRandomProjectId.sh
 
@@ -17,6 +20,9 @@ cd gcp-project-bootstrap
 ./init.sh
 ./apply.sh
 cd ..
+
+# gcloud login for terraform, set to explicit project id
+gcloud auth application-default login --project $TF_VAR_project
 
 # creates 'example-topic' using values from local bootstrap.state, saves to remote GCS
 cd gcp-topic
