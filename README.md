@@ -5,6 +5,10 @@ blog:
 ## Quick Setup
 
 ```
+# get project code
+git clone https://github.com/fabianlee/example-terraform_remote_state.git
+cd example-terraform_remote_state
+
 # sets env var with random project id
 source ./sourceMakeRandomProjectId.sh
 
