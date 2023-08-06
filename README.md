@@ -45,7 +45,9 @@ cd gcp-project-bootstrap
 cd ..
 
 # remove local state and variables
-rm -f bootstrap.tfstate*
-rm -f dynamic-backend.hcl
+rm -f bootstrap.tfstate* dynamic-backend.hcl
+rm -fr gcp-project-bootstrap/.terraform gcp-project-bootstrap/.terraform.lock.hcl
+rm -fr gcp-topic/.terraform gcp-topic/.terraform.lock.hcl
+rm -fr gcp-topic2/.terraform gcp-topic2/.terraform.lock.hcl
 ```
 

@@ -1,0 +1,7 @@
+# terraform state files and directories
+*tfstate*
+.terraform.lock.hcl
+.terraform
+
+# dynamic backend file
+dynamic-backend.hcl
