@@ -1,6 +1,6 @@
 # Example usage for terraform remote state
 
-blog: 
+blog: https://fabianlee.org/2023/08/06/terraform-remote_state-to-pass-values-to-other-configurations/
 
 ## Quick Setup
 
