@@ -30,7 +30,7 @@ cd gcp-topic
 ./apply.sh
 cd ..
 
-# creates 'example-topic-2' using values from local bootstrap.state and remote 'example-topic' GCS
+# creates 'example-topic-2' using values from local bootstrap.state and remote 'example-topic' state
 cd gcp-topic2
 ./init.sh
 ./apply.sh
