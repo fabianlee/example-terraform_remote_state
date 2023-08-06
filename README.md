@@ -1,4 +1,4 @@
-# Example for terraform remote state
+# Example usage for terraform remote state
 
 blog: 
 
