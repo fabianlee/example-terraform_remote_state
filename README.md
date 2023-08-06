@@ -33,5 +33,9 @@ cd ..
 cd gcp-project-bootstrap
 ./destroy.sh
 cd ..
+
+# remove local state and variables
+rm bootstrap.tfstate*
+rm dynamic-backend.hcl
 ```
 
