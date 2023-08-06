@@ -12,7 +12,7 @@ cd example-terraform_remote_state
 # gcloud login for terraform
 gcloud auth application-default login
 
-# sets env var with random project id
+# sets env var with new random GCP project id
 source ./sourceMakeRandomProjectId.sh
 
 # creates basic project, saves to local bootstrap.state
