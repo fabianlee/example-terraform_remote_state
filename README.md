@@ -45,7 +45,7 @@ cd gcp-project-bootstrap
 cd ..
 
 # remove local state and variables
-rm bootstrap.tfstate*
-rm dynamic-backend.hcl
+rm -f bootstrap.tfstate*
+rm -f dynamic-backend.hcl
 ```
 
